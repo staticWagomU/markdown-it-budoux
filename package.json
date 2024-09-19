@@ -1,0 +1,17 @@
+{
+  "name": "markdown-it-budoux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "budoux": "^0.6.2",
+    "markdown-it": "^14.1.0"
+  }
+}
