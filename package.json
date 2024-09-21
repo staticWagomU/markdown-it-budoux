@@ -1,17 +1,30 @@
 {
   "name": "markdown-it-word-break-style",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "unbuild"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "devDependencies": {
     "@types/markdown-it": "^14.1.2",
-    "budoux": "^0.6.2",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
     "markdown-it": "^14.1.0"
   }
 }

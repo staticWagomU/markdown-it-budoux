@@ -1,5 +1,7 @@
-export default function markdownItWordBreakStyle(md) {
-  const originalParagraphOpen = md.renderer.rules.paragraph_open || function(tokens, idx, options, env, self) {
+import type MarkdownIt from "markdown-it/index.js";
+
+export default function markdownItWordBreakStyle(md: MarkdownIt) {
+  const originalParagraphOpen = md.renderer.rules.paragraph_open || function(tokens, idx, options, _, self) {
     return self.renderToken(tokens, idx, options);
   };
 
