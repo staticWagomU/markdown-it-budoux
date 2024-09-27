@@ -1,0 +1,5 @@
+{
+  "name": "@wagomu/markdown-it-word-break-style",
+  "version": "0.1.0",
+  "exports": "./src/index.ts"
+}
