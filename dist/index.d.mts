@@ -1,5 +1,5 @@
 import MarkdownIt from 'markdown-it/index.js';
 
-declare function markdownItWordBreakStyle(md: MarkdownIt): void;
+declare function markdownItBudoux(md: MarkdownIt): void;
 
-export { markdownItWordBreakStyle as default };
+export { markdownItBudoux as default };

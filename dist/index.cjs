@@ -4,7 +4,7 @@ const budoux = require('budoux');
 
 const WORD_BREAK_STYLE = "word-break:keep-all;overflow-wrap:anywhere;";
 const ZERO_WIDTH_SPACE = "\u200B";
-function markdownItWordBreakStyle(md) {
+function markdownItBudoux(md) {
   const originalRules = {
     paragraph_open: md.renderer.rules.paragraph_open || defaultRender,
     text: md.renderer.rules.text || defaultRender
@@ -27,4 +27,4 @@ function markdownItWordBreakStyle(md) {
   };
 }
 
-module.exports = markdownItWordBreakStyle;
+module.exports = markdownItBudoux;
