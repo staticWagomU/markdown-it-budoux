@@ -6,10 +6,18 @@ import { getParser } from "./budoux";
 const WORD_BREAK_STYLE = 'word-break:keep-all;overflow-wrap:anywhere;';
 const ZERO_WIDTH_SPACE = '\u200B';
 
+/**
+  * apply budoux to markdown-it
+  * @param options
+  */
 export default function markdownItBudoux(options: Options = {}){
   const resolvedOptions = resolveOptions(options);
   const parser = getParser(resolvedOptions.language);
 
+  /**
+    * markdown-it plugin which applies budoux to markdown-it
+    * @param md
+    */
   return (md: MarkdownIt) => {
     const originalRules = {
       paragraph_open: md.renderer.rules.paragraph_open || defaultRender,
