@@ -5,7 +5,7 @@ A [markdown-it](https://github.com/markdown-it/markdown-it) plugin that integrat
 ## Features
 
 - Applies word-breaking and overflow-wrap styles to paragraphs
-- Uses BudouX to insert zero-width spaces between Japanese words for better line breaks
+- Uses BudouX to insert zero-width spaces between Japanese/Chinese etc. words for better line breaks
 - Preserves existing paragraph styles
 
 ## Installation
@@ -28,7 +28,7 @@ export default defineConfig({
       /* markdown-it options */
       markdownItSetup(md) {
         /* custom markdown-it plugins */
-        md.use(markdownItBudoux)
+        md.use(markdownItBudoux({ language: 'ja' }))
       },
     },
   },
