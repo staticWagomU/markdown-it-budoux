@@ -1,10 +1,10 @@
 {
-  "name": "markdown-it-word-break-style",
+  "name": "markdown-it-budoux",
   "description": "",
   "version": "1.0.0",
   "author": "Towa Hayashi <wagomu.dev.th@gmail.com>",
-  "homepage": "https://github.com/staticWagomU/markdown-it-word-break-style#readme",
-  "bugs": "https://github.com/staticWagomU/markdown-it-word-break-style/issues",
+  "homepage": "https://github.com/staticWagomU/markdown-it-budoux#readme",
+  "bugs": "https://github.com/staticWagomU/markdown-it-budoux/issues",
   "dependencies": {
     "budoux": "^0.6.2",
     "markdown-it": "^14.1.0"
@@ -31,7 +31,7 @@
   "module": "./dist/index.mjs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/staticWagomU/markdown-it-word-break-style.git"
+    "url": "git+https://github.com/staticWagomU/markdown-it-budoux.git"
   },
   "scripts": {
     "build": "unbuild",
