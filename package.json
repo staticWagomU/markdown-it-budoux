@@ -6,6 +6,7 @@
   "homepage": "https://github.com/staticWagomU/markdown-it-word-break-style#readme",
   "bugs": "https://github.com/staticWagomU/markdown-it-word-break-style/issues",
   "dependencies": {
+    "budoux": "^0.6.2",
     "markdown-it": "^14.1.0"
   },
   "devDependencies": {
