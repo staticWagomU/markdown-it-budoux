@@ -1,5 +1,5 @@
-import type MarkdownIt from "markdown-it/index.js";
-import { Renderer, Token } from "markdown-it/index.js";
+import type MarkdownIt from "markdown-it";
+import { Renderer, Token } from "markdown-it";
 import { loadDefaultJapaneseParser } from "budoux";
 
 const WORD_BREAK_STYLE = 'word-break:keep-all;overflow-wrap:anywhere;';

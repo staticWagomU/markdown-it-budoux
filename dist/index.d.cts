@@ -1,4 +1,4 @@
-import MarkdownIt from 'markdown-it/index.js';
+import MarkdownIt from 'markdown-it';
 
 declare function markdownItBudoux(md: MarkdownIt): void;
 
