@@ -3,6 +3,17 @@
   "type": "module",
   "version": "1.0.0",
   "description": "",
+  "keywords": [
+    "markdown-it",
+  ],
+  "author": "Towa Hayashi <wagomu.dev.th@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staticWagomU/markdown-it-word-break-style.git"
+  },
+  "bugs": "https://github.com/staticWagomU/markdown-it-word-break-style/issues",
+  "sideEffects": false,
   "main": "./dist/index.mjs",
   "exports": {
     ".": {
@@ -13,13 +24,13 @@
   },
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "unbuild"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "unbuild": "^2.0.0"
