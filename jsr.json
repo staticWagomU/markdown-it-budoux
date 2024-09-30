@@ -1,5 +1,10 @@
 {
-  "name": "@wagomu/markdown-it-budoux",
-  "version": "0.1.4",
-  "exports": "./src/index.ts"
+	"name": "@wagomu/markdown-it-budoux",
+	"version": "1.0.4",
+	"publish": {
+		"include": ["dist"]
+	},
+	"exports": {
+		".": "./dist/index.mjs"
+	}
 }

@@ -6,13 +6,15 @@ import defu, { type Defu } from "defu";
  * @param attribute - The attribute to look for to translate (default: `data-budoux`)
  */
 export type Options = {
-  language?: 'ja' | 'cs' | 'ct' | 'th';
+	language?: "ja" | "cs" | "ct" | "th";
 };
 
 export const DEFAULT_OPTIONS = {
-  language: 'ja',
+	language: "ja",
 } as const satisfies Options;
 
-export function resolveOptions(options: Options): Defu<Options, [typeof DEFAULT_OPTIONS]> {
+export function resolveOptions(
+	options: Options,
+): Defu<Options, [typeof DEFAULT_OPTIONS]> {
 	return defu(options, DEFAULT_OPTIONS);
 }

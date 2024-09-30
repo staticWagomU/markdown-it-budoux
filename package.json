@@ -1,44 +1,41 @@
 {
-  "name": "markdown-it-budoux",
-  "description": "",
-  "version": "1.0.4",
-  "author": "Towa Hayashi <wagomu.dev.th@gmail.com>",
-  "homepage": "https://github.com/staticWagomU/markdown-it-budoux#readme",
-  "bugs": "https://github.com/staticWagomU/markdown-it-budoux/issues",
-  "dependencies": {
-    "budoux": "^0.6.2",
-    "defu": "^6.1.4",
-    "markdown-it": "^14.1.0"
-  },
-  "devDependencies": {
-    "@types/markdown-it": "^14.1.2",
-    "unbuild": "^2.0.0"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "markdown-it"
-  ],
-  "license": "MIT",
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/staticWagomU/markdown-it-budoux.git"
-  },
-  "scripts": {
-    "build": "unbuild",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "sideEffects": false,
-  "type": "module",
-  "types": "./dist/index.d.ts"
+	"name": "markdown-it-budoux",
+	"description": "",
+	"version": "1.0.4",
+	"author": "Towa Hayashi <wagomu.dev.th@gmail.com>",
+	"homepage": "https://github.com/staticWagomU/markdown-it-budoux#readme",
+	"bugs": "https://github.com/staticWagomU/markdown-it-budoux/issues",
+	"dependencies": {
+		"budoux": "^0.6.2",
+		"defu": "^6.1.4",
+		"markdown-it": "^14.1.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.2",
+		"@types/markdown-it": "^14.1.2",
+		"unbuild": "^2.0.0"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"files": ["dist"],
+	"keywords": ["markdown-it"],
+	"license": "MIT",
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/staticWagomU/markdown-it-budoux.git"
+	},
+	"scripts": {
+		"build": "unbuild",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"types": "./dist/index.d.ts"
 }
