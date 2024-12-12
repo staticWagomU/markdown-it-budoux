@@ -1,6 +1,6 @@
 # markdown-it-budoux
 
-A [markdown-it](https://github.com/markdown-it/markdown-it) plugin that integrates [BudouX](https://github.com/google/budoux) for improved Japanese text wrapping.
+A [markdown-it](https://github.com/markdown-it/markdown-it) plugin that integrates [BudouX](https://github.com/google/budoux) for improved Japanese/Chinese text wrapping.
 
 ## Features
 
