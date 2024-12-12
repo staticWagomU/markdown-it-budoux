@@ -3,7 +3,6 @@
 	"description": "",
 	"version": "1.0.5",
 	"author": "Towa Hayashi <wagomu.dev.th@gmail.com>",
-	"homepage": "https://github.com/staticWagomU/markdown-it-budoux#readme",
 	"bugs": "https://github.com/staticWagomU/markdown-it-budoux/issues",
 	"dependencies": {
 		"budoux": "^0.6.2",
@@ -22,8 +21,16 @@
 			"require": "./dist/index.cjs"
 		}
 	},
-	"files": ["dist"],
-	"keywords": ["markdown-it"],
+	"files": [
+		"dist",
+    "README.md",
+    "LICENSE"
+	],
+	"homepage": "https://github.com/staticWagomU/markdown-it-budoux#readme",
+	"keywords": [
+		"budoux",
+		"markdown-it"
+	],
 	"license": "MIT",
 	"main": "./dist/index.mjs",
 	"module": "./dist/index.mjs",
