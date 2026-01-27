@@ -53,13 +53,11 @@ export function applyStyleAttribute(
 	}
 
 	if (attribute.name === "style") {
-		// スタイルの場合: セミコロンで区切って結合
 		const normalized = existingValue.endsWith(";")
 			? existingValue
 			: `${existingValue};`;
 		return normalized + attribute.value;
 	}
 
-	// クラスの場合: スペースで区切って結合
 	return `${existingValue} ${attribute.value}`;
 }

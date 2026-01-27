@@ -38,9 +38,7 @@ export const SUPPORTED_ELEMENTS = [
  */
 export const ELEMENT_TOKEN_MAP = {
 	paragraph: ["paragraph_open"],
-	heading: [
-		"heading_open", // h1-h6 全て
-	],
+	heading: ["heading_open"],
 	table_cell: ["td_open"],
 	table_header: ["th_open"],
 	list_item: ["list_item_open"],

@@ -40,8 +40,6 @@ export function setupTextRule(
 		self: Renderer,
 	): string {
 		const token = tokens[idx];
-
-		// BudoUX処理を適用
 		token.content = processText(
 			token.content,
 			options.language,

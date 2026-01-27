@@ -28,10 +28,7 @@ export function createPlugin(options: Options = {}): PluginFunction {
 	const resolvedOptions = resolveOptions(options);
 
 	return (md: MarkdownIt): void => {
-		// テキストルールを設定（BudoUX処理）
 		setupTextRule(md, resolvedOptions);
-
-		// ブロック要素ルールを設定（スタイル適用）
 		setupBlockRules(md, resolvedOptions);
 	};
 }

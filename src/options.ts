@@ -95,7 +95,6 @@ export function resolveOptions(options: Options): ResolvedOptions {
 	const { applyTo, ...rest } = options;
 	const merged = defu(rest, DEFAULT_OPTIONS) as ResolvedOptions;
 
-	// applyTo は明示的に指定された場合のみ置き換え
 	if (applyTo !== undefined) {
 		merged.applyTo = applyTo;
 	}

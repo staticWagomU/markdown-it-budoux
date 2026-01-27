@@ -45,11 +45,7 @@ function extendTokenRule(
 		self: Renderer,
 	): string {
 		const token = tokens[idx];
-
-		// 既存の属性値を取得
 		const existingValue = token.attrGet(styleAttr.name);
-
-		// 新しい値を適用
 		const newValue = applyStyleAttribute(existingValue, styleAttr);
 		token.attrSet(styleAttr.name, newValue);
 
@@ -69,14 +65,12 @@ export function setupBlockRules(
 	md: MarkdownIt,
 	options: ResolvedOptions,
 ): void {
-	// スタイル属性を生成
 	const styleAttr = generateStyleAttribute({
 		styleMode: options.styleMode,
 		inlineStyle: options.inlineStyle,
 		className: options.className,
 	});
 
-	// applyTo に含まれる各要素タイプに対してルールを設定
 	for (const elementType of options.applyTo) {
 		const tokenTypes = ELEMENT_TOKEN_MAP[elementType as ElementType];
 
