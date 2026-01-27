@@ -12,7 +12,8 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.2",
 		"@types/markdown-it": "^14.1.2",
-		"unbuild": "^2.0.0"
+		"unbuild": "^2.0.0",
+		"vitest": "^4.0.18"
 	},
 	"exports": {
 		".": {
@@ -23,8 +24,8 @@
 	},
 	"files": [
 		"dist",
-    "README.md",
-    "LICENSE"
+		"README.md",
+		"LICENSE"
 	],
 	"homepage": "https://github.com/staticWagomU/markdown-it-budoux#readme",
 	"keywords": [
@@ -40,7 +41,8 @@
 	},
 	"scripts": {
 		"build": "unbuild",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "vitest run",
+		"test:watch": "vitest"
 	},
 	"sideEffects": false,
 	"type": "module",
